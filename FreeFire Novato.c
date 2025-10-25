@@ -2,9 +2,12 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Código da Ilha – Edição Free Fire
+// Nível: Novato
+
 // Struct para representar um item no inventário do jogador
 typedef struct {
-    char nome[30];    // Nome do item (ex.: "AK47", "Bandagem")
+    char nome[30];    // Nome do item (ex.: "manga", "Bandagem")
     char tipo[20];    // Tipo do item (ex.: "arma", "municao", "cura")
     int quantidade;   // Quantidade do item
 } Item;
@@ -28,7 +31,7 @@ int main() {
         exibirMenu();
         printf("Digite sua escolha: ");
         scanf("%d", &opcao);
-        getchar(); // Limpa o buffer do '\n'
+        getchar();
 
         switch (opcao) {
             case 1:
